@@ -53,10 +53,22 @@ body, input, button, textarea {
 
 
 /*Mobile resposive*/
+
+.logo{
+    display: flex;
+    padding: 15px;
+    flex-direction: column;
+}
+
+.logo p{
+    display: flex;
+    justify-content: center;
+    color: #FFFFFF;
+}
 .logo img{
     width: 100%;
     height: auto;
-    
+    margin: 10px;
 }
 
 
@@ -84,6 +96,19 @@ body, input, button, textarea {
     border-radius: 15px;
 }
 
-.buttons p{
+.buttons .estudar:active{
+    background-color: #6842c2;
+
+}
+
+.buttons .darAulas:active{
+    background-color: #04BF58;
+    
+}
+
+.lastText{
     display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    color: #9C98A6;
 }
