@@ -51,10 +51,11 @@ body, input, button, textarea {
 }
 
 .intro{
-    width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    border: 5px solid red;
+
 }
 
 .logo img {
@@ -67,13 +68,16 @@ body, input, button, textarea {
     height: 400px;
 }
 
+
+    /*Outra Div*/
+
 .buttons {
     position: absolute;
     flex-direction: row;
     bottom: 5%;
     display: inline-block;
     width: 80%;
-
+    border: 5px solid red;
 }
 
 .estudar{
@@ -83,7 +87,8 @@ body, input, button, textarea {
     margin-right: 10px;
     border-radius: 10px;
     border: 0;
-    width: 200px;
+    width: 210px;
+    height: 80px;
     
 }
 
@@ -92,11 +97,26 @@ body, input, button, textarea {
     padding: 5px;
     border-radius: 10px;
     border: none;
-    width: 200px;
+    width: 210px;
+    height: 80px;
+}
+
+.darAulas img {
+    vertical-align: middle;
+    width: 30px;
+    height: 30px;
+
+}
+.estudar img {
+    vertical-align: middle;
+    width: 30px;
+    height: 30px;
+    
 }
 
 .estudar:hover{
     background-color: #6842c2;
+    
 }
 
 .darAulas:hover {
@@ -104,8 +124,13 @@ body, input, button, textarea {
 }
 
 .totalConec{
+    color: var(--color-text-in-primary);;
     position: absolute;
     right: 30px;
     bottom: 15px;
-    font-size: 0.988rem;
+    font-size: 1rem;
+}
+
+.totalConec img{
+    vertical-align: middle;
 }
