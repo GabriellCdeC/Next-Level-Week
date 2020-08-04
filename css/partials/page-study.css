@@ -170,3 +170,37 @@ html, body {
     align-items: center;
     justify-content: space-between;
 }
+
+.teacher-item footer p {
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    color: #9C98A6;
+}
+
+.teacher-item footer p strong {
+    font-size: 1.6rem;
+    color: #8257E5;
+    display: block;
+}
+
+.teacher-item footer button {
+    width: 20rem;
+    height: 5.6rem;
+    background: #04D361;
+    color: #FFFFFF;
+    border: 0;
+    border-radius: 0.8rem;
+    cursor: pointer;
+    font: 700 1.4rem Archivo;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: background 0.2s;
+    margin-left: 1.6rem;
+    outline: 0;
+}
+
+.teacher-item footer button:hover {
+    background: #04BF58;
+}
