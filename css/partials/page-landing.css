@@ -27,6 +27,10 @@
     margin: 10px;
 }
 
+.hero-image {
+    width: 100%;
+}
+
 .buttons-container {
     display: flex;
     justify-content: center;
@@ -78,8 +82,28 @@
 
 /*Desktop responsive mode*/
 
-@media(min-width: 1100px) {
-    #page-landing {
+@media (min-width: 1100px) {
+    #page-landing #container{
         max-width: 1100px;
+        display: grid;
+        grid-template-columns: 2fr 1fr 2fr;
+        grid-template-rows: 350px 1fr;
+        grid-template-areas: 
+        "proffy image image"
+        "button button texting";
+    }
+
+    .logo {
+        grid-area: proffy;
+        text-align: initial;
+    }
+    .hero-image{
+        grid-area: image;
+    }
+    .buttons-container {
+        grid-area: button;
+    }
+    .total-connections {
+        grid-area: texting;
     }
 }
