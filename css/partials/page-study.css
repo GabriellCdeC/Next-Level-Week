@@ -204,3 +204,15 @@ html, body {
 .teacher-item footer button:hover {
     background: #04BF58;
 }
+
+/* Desktop responsive mode */
+
+@media (min-width: 700px) {
+    #page-study #container {
+        max-width: 100vw;
+    }
+    .teacher-item header,
+    .teacher-item footer {
+        padding: 32px;
+    }
+}
