@@ -91,19 +91,30 @@
         grid-template-areas: 
         "proffy image image"
         "button button texting";
+        gap: 60px;
     }
 
-    .logo {
+    .logo{
         grid-area: proffy;
         text-align: initial;
+        align-self: center;
+
     }
+    .logo img {
+        height: 100%;
+    }
+
     .hero-image{
         grid-area: image;
     }
+    
     .buttons-container {
         grid-area: button;
+        justify-content: flex-start;
     }
+
     .total-connections {
         grid-area: texting;
+        justify-self: end;
     }
 }
