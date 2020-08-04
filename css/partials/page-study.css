@@ -1,11 +1,14 @@
 #page-study #container {
     width: 100vh;
     height: 100vh;
+
 }
 
 
 /* Mobile Responsive Mode*/
-
+html, body {
+    background-color: #F0F0F7;
+}
 .page-header {
     background-color: #8257E5;
     display: flex;
@@ -109,4 +112,61 @@
     position: absolute;
     left: 1.6rem;
     bottom: 0;
+}
+
+#page-study main {
+    margin: 3.2rem auto;
+    width: 90%;
+}
+
+.teacher-item{
+    background-color: #FFFFFF;
+    border: 1px solid #E6E6F0;
+    border-radius: 0.8rem;
+    margin-top: 2.4rem;
+}
+
+.teacher-item header{
+    padding: 3.2rem 2rem;
+    display: flex;
+
+}
+
+.teacher-item header img{
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+}
+
+.teacher-item header div {
+    margin-left: 2.4rem;
+}
+
+.teacher-item header div strong {
+    font: 700 2.4rem Archivo;
+    display: block;
+    color: #32264D;
+}
+.teacher-item header div span {
+    font-size: 1.6rem;
+    display: block;
+    margin-top: 0.4rem ;
+    color: #9C98A6;
+}
+
+.teacher-item p {
+    padding: 0 2rem;
+    font-size: 1.6rem;
+    line-height: 2.8rem;
+    color: #9C98A6;
+}
+
+.teacher-item footer{
+    padding: 3.2rem 2rem;
+    background: #FAFAFC;
+    border-top: 1px solid #E6E6F0;
+    margin-top: 3.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
