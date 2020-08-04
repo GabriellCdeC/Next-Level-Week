@@ -32,7 +32,6 @@ body, html{
 }
 
 body {
-    background-color: #8257E5;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -47,68 +46,6 @@ body, input, button, textarea {
 #container {
     width: 90vw;
     max-width: 900px;
-    color: white;
-}
-
-
-
-/*Mobile resposive*/
-
-.logo{
-    display: flex;
-    padding: 15px;
-    flex-direction: column;
-}
-
-.logo p{
-    display: flex;
-    justify-content: center;
     color: #FFFFFF;
 }
-.logo img{
-    width: 100%;
-    height: auto;
-    margin: 10px;
-}
 
-
-.buttons{
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-
-}
-.buttons .estudar{
-    background-color: #9871F5;
-    color: white;
-    border: none;
-    width: 150px;
-    height: 60px;
-    border-radius: 15px;
-    margin-right: 30px;
-}
-
-.buttons .darAulas{
-    background-color: #04D361;
-    color: white;
-    border: none;
-    width: 150px;
-    border-radius: 15px;
-}
-
-.buttons .estudar:active{
-    background-color: #6842c2;
-
-}
-
-.buttons .darAulas:active{
-    background-color: #04BF58;
-    
-}
-
-.lastText{
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-    color: #9C98A6;
-}

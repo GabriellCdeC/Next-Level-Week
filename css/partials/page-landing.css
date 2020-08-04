@@ -1,0 +1,74 @@
+#page-landing {
+    background: #8257E5;
+}
+
+/*Mobile resposive mode*/
+
+.logo{
+    display: flex;
+    padding: 15px;
+    flex-direction: column;
+}
+
+.logo p{
+    display: flex;
+    justify-content: center;
+    color: #FFFFFF;
+}
+
+.logo img{
+    width: 100%;
+    height: auto;
+    margin: 10px;
+}
+
+
+.buttons{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+
+}
+.buttons .estudar{
+    background-color: #9871F5;    
+    border: none;
+    width: 150px;
+    height: 60px;
+    border-radius: 15px;
+    margin-right: 30px;
+    
+}
+.buttons .estudar a{
+    text-decoration: none;
+    color: white;
+}
+
+.buttons .darAulas{
+    background-color: #04D361;    
+    border: none;
+    width: 150px;
+    border-radius: 15px;
+    
+}
+
+.buttons .darAulas a{
+    text-decoration: none;
+    color: white;
+}
+
+.buttons .estudar:active{
+    background-color: #6842c2;
+
+}
+
+.buttons .darAulas:active{
+    background-color: #04BF58;
+    
+}
+
+.lastText{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    color: #9C98A6;
+}
