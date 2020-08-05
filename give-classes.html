@@ -32,7 +32,7 @@
                 <p>O primeiro passo, é preencher esse formulário de inscrição</p>
             </div>
         </header>
-        
+
         <main>
             <form action="" id="create-class">
                 <fieldset>
@@ -86,10 +86,35 @@
                         <input type="cost" id="cost" type="number" required>
                     </div>
                 </fieldset>
+
+                <fieldset>
+                    <legend>Horários disponíveis</legend>
+                    <button id="add-time">+ Novo Horário</button>
+                    <div class="schedule-item">
+                        <div class="select-block">
+                            <label for="weekday">Dia da semana</label>
+                            <select name="weekday[]" required>
+                                <option value="0">Domingo</option>
+                                <option value="1">Segunda-feira</option>
+                                <option value="2">Terça-feira</option>
+                                <option value="3">Quarta-feira</option>
+                                <option value="4">Quinta-feira</option>
+                                <option value="5">Sexta-feira</option>
+                                <option value="6">Sábado</option>
+                            </select>
+                        </div>
+
+                        <div class="input-block">
+                            <label for="time_from">Das</label>
+                            <input type="time" name="time_from[]"> 
+                        </div>
+                    </div>
+
+                </fieldset>
             </form>
         </main>
 
-        
+
 
     </div>
 
