@@ -3,9 +3,9 @@ buttonAddTime.addEventListener('click', cloneField)
 
 
 function cloneField(){
-    const addTimeCopy = document.querySelector('.schedule-item').cloneNode(true)
+    const addTimeField = document.querySelector('.schedule-item').cloneNode(true)
 
     //Colocar na pagina
 
-    document.querySelector('#schedule-items').appendChild(addTimeCopy)
+    document.querySelector('#schedule-items').appendChild(addTimeField)
 }
