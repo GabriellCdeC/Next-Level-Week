@@ -20,6 +20,6 @@ server.use(express.static("public"))
 .get("/", pageLanding)
 .get("/study",  pageStudy) 
 .get("/give-classes", pageGiveClasses)
-.post("/save-class", saveClasses)
+.post("/save-classes", saveClasses)
 //Start do serve
 .listen(5500)
