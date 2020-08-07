@@ -1,20 +1,21 @@
 const Database = require('./database/db')
 
-const { subjects, weekdays, getSubject} = require('./utils/formart')
+const { subjects, weekdays, getSubject, convertHoursToMinutes} = require('./utils/formart')
 
 function pageLanding (req, res) {
     return res.render("index.html")
 }
 
-function pageStudy (req, res) {
+async function pageStudy (req, res) {
     const filters = req.query
 
     if(!filters.subject || !filters.weekday  || !filters.time) {
         return res.render("study.html", {filters, subjects, weekdays })
     }
 
+    //Converter horas em minutos
+    const timeToMinutes = convertHoursToMinutes(filters.time)
 
-    console.log("Não tem campos vazios")
     const query = `
         SELECT classes.*, proffys.*
         FROM proffys
@@ -24,16 +25,29 @@ function pageStudy (req, res) {
             FROM class_schedule
             WHERE class_schedule.class_id = classes.id
             AND class_schedule.weekday = ${filters.weekday}
-            AND class_schedule.time_from <= ${filters.time}
-            AND class_schedule.time_to > ${filters.time}
+            AND class_schedule.time_from <= ${timeToMinutes}
+            AND class_schedule.time_to > ${timeToMinutes}
         )
+        AND classes.subject = '${filters.subject}'
     `
+
+    //Caso haja erro na consulta do BD
+
+    try {
+        const db = await Database;
+        const proffys = await db.all(query)
+
+        return res.render('study.html', {proffys, subjects, filters, weekdays})
+
+    } catch (error) {
+        console.log(error)
+    }
 
     
 }
 
 function pageGiveClasses (req, res) {
-    const data = req.query
+    const data = req.body
     const isNotEmpty = Object.keys(data).length > 0
      //Adicionar data ao objeto de proffys
     if(isNotEmpty){
@@ -46,9 +60,14 @@ function pageGiveClasses (req, res) {
 }
 
 
+function saveClasses(req, res){
+
+}
+
 
 module.exports = {
     pageLanding,
     pageStudy,
-    pageGiveClasses
+    pageGiveClasses,
+    saveClasses
 }

@@ -134,6 +134,13 @@ html, body {
     background: #04BF58;
 }
 
+#page-study main .no-results {
+    max-width: 30rem;
+    margin: 12rem auto;
+    text-align: center;
+    color: #32264D;
+}
+
 /* Desktop responsive mode */
 
 @media (min-width: 700px) {
